@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/filename-case */
 function App() {
   return (
     <>
