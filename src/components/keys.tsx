@@ -2,7 +2,7 @@ import { operator } from "./utils";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Keys = ({ keys, getNumber }: any) => {
   return (
-    <div className="flex justify-center flex-wrap w-1/2 sm:w4/5 bg-gray-300 rounded-xl shadow-xl px-5 py-16 gap-2">
+    <div className="flex justify-center flex-wrap sm:w-1/2 w-4/5 bg-gray-300 rounded-xl shadow-xl px-5 py-16 gap-2">
       {keys.map((key: { num: string }, index: number) => (
         <div
           onClick={() => getNumber(key.num)}

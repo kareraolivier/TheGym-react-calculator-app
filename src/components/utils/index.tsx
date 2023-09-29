@@ -11,7 +11,6 @@ export const number: { num: string }[] = [
   { num: "0" },
   { num: "A/C" },
   { num: "(" },
-  { num: ")" },
   { num: "." },
   { num: "+/-" },
   { num: "+" },
@@ -19,6 +18,7 @@ export const number: { num: string }[] = [
   { num: "*" },
   { num: "/" },
   { num: "%" },
+  { num: ")" },
   { num: "=" },
 ];
 
