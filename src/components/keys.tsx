@@ -1,6 +1,12 @@
+/* eslint-disable no-unused-vars */
 import { operator } from "./utils";
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const Keys = ({ keys, getNumber }: any) => {
+const Keys = ({
+  keys,
+  getNumber,
+}: {
+  keys: { num: string }[];
+  getNumber: (numkey: string) => void;
+}) => {
   return (
     <div className="flex justify-center flex-wrap sm:w-1/2 w-4/5 bg-gray-300 rounded-xl shadow-xl px-5 py-16 gap-2">
       {keys.map((key: { num: string }, index: number) => (
