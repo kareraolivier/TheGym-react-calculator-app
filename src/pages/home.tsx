@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Keys from "../components/keys";
-import { number, operator } from "../components/utils";
+import { number, stringValidation } from "../components/utils";
 
 const Home = () => {
   const [keys, setKeys] = useState("");
@@ -11,7 +11,7 @@ const Home = () => {
     }
 
     if (numkey == "=") {
-      setKeys((previous) => {
+      setKeys((previous: string) => {
         try {
           if (eval(previous) == 0) {
             return "";
@@ -19,6 +19,7 @@ const Home = () => {
           if (eval(previous) == undefined) {
             return "";
           }
+
           return eval(previous);
         } catch (error) {
           setErrors(true);
@@ -30,17 +31,8 @@ const Home = () => {
         const number: number = Number(previous);
         return (number * -1).toString();
       });
-    } else if (["+", "/", "*", "-"].includes(numkey)) {
-      setKeys((previous) =>
-        operator()
-          .slice(0, -2)
-          // eslint-disable-next-line unicorn/prefer-at
-          .includes(previous.charAt(previous.length - 1))
-          ? previous
-          : previous + numkey
-      );
     } else {
-      setKeys((previous) => previous + numkey);
+      setKeys((previous) => stringValidation(previous, numkey));
     }
   };
   errors &&
