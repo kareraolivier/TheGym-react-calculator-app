@@ -16,5 +16,6 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "no-unused-vars": "warn",
+    "unicorn/prefer-set-has": "off",
   },
 };
