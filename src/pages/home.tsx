@@ -4,7 +4,6 @@ import { numbers, stringValidation } from "../components/utils";
 
 const Home = () => {
   const [keys, setKeys] = useState("");
-  const [result, setResult] = useState();
   const [errors, setErrors] = useState(false);
   const getNumber = (numkey: string) => {
     if (numkey == "A/C") {
@@ -12,8 +11,8 @@ const Home = () => {
     }
 
     if (numkey == "=") {
-      setResult(eval(keys));
-      setKeys(stringValidation("", result));
+      const sum: string = eval(keys);
+      setKeys(stringValidation("", sum));
     } else if (numkey == "+/-") {
       setKeys((previous) => {
         const number: number = Number(previous);
