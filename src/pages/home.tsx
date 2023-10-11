@@ -33,7 +33,7 @@ const Home = () => {
     <div>
       <div className="h-screen w-full flex justify-center items-center">
         <div className="w-[50rem] flex flex-col items-center">
-          <h1 className="text-5xl text-green-600 text-center py-5 font-bold">
+          <h1 className="text-4xl text-green-600 text-center py-5 font-bold">
             Calculator
           </h1>
           <p className="font-bold text-2xl my-4 py-4 px-6 bg-gray-300 sm:w-1/2 w-4/5 rounded-lg text-right">
