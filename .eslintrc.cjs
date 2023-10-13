@@ -17,5 +17,6 @@ module.exports = {
     ],
     "no-unused-vars": "warn",
     "unicorn/prefer-set-has": "off",
+    "unicorn/filename-case": "off",
   },
 };

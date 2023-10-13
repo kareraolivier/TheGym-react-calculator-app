@@ -1,0 +1,18 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "ch/calculator-v-one",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "ch/calculator-v-one": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "ch/calculator-v-one",
+    "origin"
+  ]
+}
